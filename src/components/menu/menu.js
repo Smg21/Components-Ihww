@@ -1,7 +1,7 @@
-import { data } from 'msw/lib/types/context';
+//import { data } from 'msw/lib/types/context';
 import './Menu.less'
 
-import 'src/components/menu/menu.less';
+
 
 
 // This is the data we will be using, study it but don't change anything, yet.
@@ -36,6 +36,10 @@ let menuItems = [
 
   Step 6: Use 'menuMaker' to create a menu using the 'menuItems' array, and append the returned menu to the header.
 */
+/*
+data.forEach(article => {
+  document.querySelector('div.articles').appendChild(articlemaker(article));
+});
 
 
 
@@ -67,23 +71,13 @@ console.log(menuMaker(menuItems));
 document.querySelector('.header').appendChild(menuMaker(menuItems));
 
 
-
-//function Home() {
-  //return (
-    //<div>
-      //<img src={"mocks\img\menu.png"} alt="Ham logo"/>
-    //</div>
-  //);
-//}
-
-
-function articleMaker(articleOb) {
-const articleWrapper = document.createElement('div');
-const articleTitle = document.createElement('h2');
-const articleDate = document.createElement('p');
-const articleParagraphOne = document.createElement('div');
-const articleParagraphTwo = document.createElement('div');
-const articleParagraphThree = document.createElement('div');
+function articleMaker(articleOb => {
+const articleWrapper = document.createElement('div')
+const articleTitle = document.createElement('h2')
+const articleDate = document.createElement('p')
+const articleParagraphOne = document.createElement('div')
+const articleParagraphTwo = document.createElement('div')
+const articleParagraphThree = document.createElement('div')
 const expandButton = document.createElement('span')
 
 articleWrapper.classList.add('article');
@@ -112,7 +106,4 @@ return articleWrapper;
 
 }
 
-
-data.forEach(article => {
-  document.querySelector('div.articles').appendChild(articlemaker(article));
-})
+*/
